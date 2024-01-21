@@ -31,7 +31,7 @@ function productify(tabs) {
 browser.tabs.insertCSS({ code: hidePage }).then(() => {
 //const url = beastNameToURL(e.target.textContent);
 browser.tabs.sendMessage(tabs[0].id, {
-command: "  ",
+command: "productify",
 //beastURL: url,
 });
 });
@@ -58,7 +58,7 @@ console.error(`Could not productify: ${error}`);
 
 /**
 * Get the active tab,
-* then call "beastify()" or "reset()" as appropriate.
+* then call "productify()" or "reset()" as appropriate.
 */
 if (e.target.tagName !== "BUTTON" || !e.target.closest("#popup-content")) {
 // Ignore when click is not on a button within <div id="popup-content">.
@@ -72,7 +72,7 @@ browser.tabs
 } else {
 browser.tabs
 .query({ active: true, currentWindow: true })
-.then(beastify)
+.then(productify)
 .catch(reportError);
 }
 });

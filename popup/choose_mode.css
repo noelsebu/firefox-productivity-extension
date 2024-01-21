@@ -1,6 +1,8 @@
 html,
 body {
-  width: 100px;
+  width: 200px;
+  margin: 0;
+  padding: 0;
 }
 
 .hidden {
@@ -10,12 +12,10 @@ body {
 button {
   border: none;
   width: 100%;
-  margin: 3% auto;
-  padding: 4px;
-  text-align: center;
-  font-size: 1.5em;
+  /* margin-left: 5px; */
+  text-align: left;
+  font-size: 14px;
   cursor: pointer;
-  background-color: #e5f2f2;
 }
 
 button:hover {
